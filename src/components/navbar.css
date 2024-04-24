@@ -1,0 +1,168 @@
+.candal-regular {
+    font-family: "Candal", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.c2 {
+    font-family: "Candal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #8f705d;
+}
+.c3 {
+    font-family: "Candal", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    font-style: normal;
+    color: white;
+    opacity: 0.8;
+
+}
+.custom-button {
+    background: transparent; /* Arkaplan rengi */
+    color: white; /* Yazı rengi */
+    border: 2px solid white; /* Kenarlık kalınlığı ve rengi */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Geçiş efekti */
+    position: absolute; /* Mutlak pozisyon */
+    top: 50%; /* Yukarıdan ortala */
+    left: 50%; /* Soldan ortala */
+    transform: translate(-50%, -50%); /* Merkez ortala */
+    z-index: 1; /* Z-index ayarı */
+    width: 32%; /* Sayfa genişliğinin yüzde 30'u */
+    height: 8%; /* İçeriğe göre otomatik yükseklik */
+    font-size:calc(60% + 1vw);
+
+    font-family: "Candal", sans-serif;
+    font-weight: 400;
+    opacity: 0.8;
+    font-style: normal;
+}
+
+.custom-button:hover {
+    background-color: #6d5b53; /* Hover sırasında arkaplan rengi */
+    border-color: white; /* Hover sırasında kenarlık rengi */
+}
+
+.navbar-wrapper {
+    position: fixed;
+    top: 0;
+    left: 50%;          /* Sayfanın yarısına getir */
+    width: 80%;
+    transform: translateX(-50%); /* Yatayda merkezle */
+    z-index: 1000;
+}
+
+
+.navbar-transparent {
+    opacity: 0.8; /* Transparan arka plan rengi */
+}
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Resmi arka plana yerleştir */
+    width: 100%; /* Resmin genişliğini ayarlayın */
+    height: auto;
+
+}
+
+/*.navbar-brand {
+    height: auto; /* Brand içeriğinin yüksekliğini ayarlayın */
+
+
+
+
+
+.navbar {
+    height: calc(5vw + 30px);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: calc(1vw + 6px);
+    padding-bottom: calc(1vw + 6px);
+    border-radius: calc(0.5vw + 3px);
+    opacity: 0.8;
+}
+
+.navbar-brand {
+    font-size: calc(1vw + 12px);
+}
+
+.nav-link {
+    font-size: calc(0.8vw + 10px);
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+        opacity: 0.8;
+        height: calc(4.5vw + 25px);
+        padding-top: calc(0.9vw + 5px);
+        padding-bottom: calc(0.9vw + 5px);
+        border-radius: calc(0.45vw + 2.5px);
+        transition: font-size 0.3s ease-in-out;
+    }
+    .navbar-brand {
+        font-size: calc(0.9vw + 10px);
+        transition: font-size 0.3s ease-in-out;
+    }
+    .nav-link {
+        font-size: calc(0.7vw + 8px);
+        transition: font-size 0.3s ease-in-out;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        opacity: 0.8;
+        height: calc(4vw + 20px);
+        padding-top: calc(0.8vw + 4px);
+        padding-bottom: calc(0.8vw + 4px);
+        border-radius: calc(0.4vw + 2px);
+        transition: font-size 0.3s ease-in-out;
+    }
+    .navbar-brand {
+        font-size: calc(0.8vw + 8px);
+        transition: font-size 0.3s ease-in-out;
+    }
+    .nav-link {
+        font-size: calc(0.6vw + 6px);
+        transition: font-size 0.3s ease-in-out;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        transition: font-size 0.3s ease-in-out;
+        opacity: 0.8;
+        height: calc(3.5vw + 15px);
+        padding-top: calc(0.7vw + 3px);
+        padding-bottom: calc(0.7vw + 3px);
+        border-radius: calc(0.35vw + 1.5px);
+    }
+    .navbar-brand {
+        transition: font-size 0.3s ease-in-out;
+        font-size: calc(0.7vw + 6px);
+    }
+    .nav-link {
+        transition: font-size 0.3s ease-in-out;
+        font-size: calc(0.5vw + 4px);
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        transition: font-size 0.3s ease-in-out;
+        opacity: 0.8;
+        height: calc(3vw + 10px);
+        padding-top: calc(0.6vw + 2px);
+        padding-bottom: calc(0.6vw + 2px);
+        border-radius: calc(0.3vw + 1px);
+    }
+    .navbar-brand {
+        transition: font-size 0.3s ease-in-out;
+        font-size: calc(0.6vw + 4px);
+    }
+    .nav-link {
+        transition: font-size 0.3s ease-in-out;
+        font-size: calc(0.4vw + 2px);
+    }
+}

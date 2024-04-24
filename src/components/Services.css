@@ -1,0 +1,40 @@
+
+.services__container {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: left;
+}
+.services {
+    padding: 4rem;
+    background: #fff;
+
+}
+.services__wrapper {
+    display: flex;
+}
+.services-items{
+    text-align: left;
+
+}
+.services-head{
+    font-family: "Candal", sans-serif;
+    margin-bottom: 25px;
+    color: #775a4c;
+}
+.services-maddeler {
+    display: flex;
+    color: #8f705d;
+    align-items: flex-start;
+    list-style-type: none; /* Madde işaretini kaldır */
+    margin-left: 20px;     /* Sol kenardan 20px boşluk bırak */
+    padding-left: 0;       /* Madde işareti için sol boşluğu kaldır */
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family: "Candal", sans-serif;
+
+}
+
+.services-maddeler::before {
+    content: '• ';         /* Madde işareti ekle */
+}
