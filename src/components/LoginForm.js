@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './LoginForm.css'
 import {FaUser, FaLock} from "react-icons/fa"
 import {Dropdown} from "react-bootstrap";
@@ -6,6 +6,11 @@ import {useNavigate} from "react-router-dom";
 
 function LoginForm(){
     const navigate = useNavigate();
+    const [selectedItem, setSelectedItem] = useState(null);
+
+    const handleItemClick = (item) => {
+        setSelectedItem(item);
+    };
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -22,19 +27,20 @@ function LoginForm(){
                         <h1>Sign In</h1>
 
                         <Dropdown className="drop-down">
-                            <Dropdown.Toggle variant="outline-dark" id="dropdown-basic">
-                                Select Corporation
+                            <Dropdown.Toggle variant="outline-dark" id="dropdown-basic" className={"drop-down-basic"}>
+                                {selectedItem || "Select Corporation"}
                             </Dropdown.Toggle>
 
-                            <Dropdown.Menu className="menu">
-                                <Dropdown.Item  href="/khas">Kadir Has University</Dropdown.Item>
-                                <Dropdown.Item href="/action-2">Corporation 2</Dropdown.Item>
-                                <Dropdown.Item href="/action-3">Corporation 3</Dropdown.Item>
+                            <Dropdown.Menu className={"menu"}>
+                                <Dropdown.Item onClick={() => handleItemClick("Kadir Has University")}>Kadir Has University</Dropdown.Item>
+                                <Dropdown.Item onClick={() => handleItemClick("Corporation 2")}>Corporation 2</Dropdown.Item>
+                                <Dropdown.Item onClick={() => handleItemClick("Corporation 3")}>Corporation 3</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
 
+
                         <div className="input-box">
-                            <input type="text" placeholder='Username' required/>
+                            <input type="t" placeholder='Username' required/>
                             <FaUser className='icon'/>
 
                         </div>
@@ -45,7 +51,7 @@ function LoginForm(){
                         <div className="remember-forgot">
                             <label><input type={"checkbox"}/> Remember me</label>
                         </div>
-                        <button type="submit">Login</button>
+                        <button type="submi">Login</button>
 
                     </form>
                 </div>

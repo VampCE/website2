@@ -1,0 +1,69 @@
+.input-container {
+    width: 700px; /* Formun maksimum genişliği 500 piksel olacak */
+    margin: 0 auto;
+    background-color: rgba(143, 112, 93, 0.5); /* Formun arka plan rengi */
+    padding: 20px; /* Formun içerisindeki içerikler ile formun kenarları arasında boşluk bırakacak */
+    border-radius: 10px; /* Formun kenarlarını yuvarlak yapacak */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Forma hafif bir gölgelendirme efekti ekleyecek */
+    display: flex; /* İçeriği yatayda hizalamak için */
+    flex-direction: column; /* İçeriği dikeyde hizalamak için */
+    align-items: center; /* İçeriği dikeyde ortalamak için */
+    font-family: "Poppins", sans-serif;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Her bir form grubu arasında 20 piksel boşluk olacak */
+}
+.form{
+    justify-content: center;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+input[type="file"] {
+    width: 500px; /* Inputların genişliği formun tam genişliği kadar olacak */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical; /* Yatay boyutu değiştirmeye izin verir */
+}
+
+input[type="file"] + label {
+    font-size: 1em;
+    font-weight: 700;
+    background-color: #9b9fa3;
+    color: white;
+    padding: 10px 20px; /* Dosya yükleme düğmesine daha fazla boşluk verilecek */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="file"] + label:hover {
+    background-color: #0056b3;
+}
+
+input[type="file"]:focus + label,
+input[type="file"] + label:hover {
+    background-color: #0056b3;
+}
+
+input[type="file"]:focus + label {
+    border-color: #0056b3;
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 5px;
+}

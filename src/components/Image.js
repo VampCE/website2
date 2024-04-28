@@ -14,6 +14,7 @@ function Image() {
                     className='btns'
                     buttonStyle='btn--primary'
                     buttonSize='btn--large'
+                    href="/ContactUs"
                 >
                     LocateLost for Business
                 </Button>

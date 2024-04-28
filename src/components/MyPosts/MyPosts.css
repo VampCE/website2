@@ -1,0 +1,29 @@
+.my-posts {
+    margin-top:25px;
+
+    margin-left: 510px;
+    font-family: "Poppins", sans-serif;
+}
+
+.my-posts table {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.my-posts th, .my-posts td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.my-posts th {
+    background-color: #f2f2f2;
+}
+
+.my-posts tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.my-posts tr:hover {
+    background-color: #ddd;
+}

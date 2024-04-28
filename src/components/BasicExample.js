@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation ,Link} from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -13,7 +13,7 @@ function BasicExample() {
     const [showContent, setShowContent] = useState(true);
 
     useEffect(() => {
-        if (location.pathname === '/login') {
+        if (location.pathname === '/login'||location.pathname === '/AboutUs' ) {
             setShowContent(false);
         } else {
             setShowContent(true);
@@ -29,7 +29,7 @@ function BasicExample() {
 
     return (
         <div>
-            <Navbar expand="xxl" className="bg-body-tertiary navbar-wrapper fixed-top">
+            <Navbar expand="xxl" className="bg-body-tertiary navbar-wrapper ">
                 <Container>
                     <Navbar.Brand className="candal-regular" href="/" style={{ color: "#6d5b53" }}>
                         LocateLost&nbsp;&nbsp;
@@ -41,12 +41,16 @@ function BasicExample() {
                             {showContent && (
                                 <>
                                     <Nav.Link className="c2" onClick={() => handleNavigateTo('services')}>Services</Nav.Link>
-                                    <Nav.Link className="c2" onClick={() => handleNavigateTo('footer')}>About</Nav.Link>
+                                    <Nav.Link className="c2" onClick={() => handleNavigateTo('footer')}>Subscribe</Nav.Link>
+
+
                                 </>
                             )}
+                            <Link className="c2 nav-link" to='/AboutUs'>About Us</Link>
                         </Nav>
-                        {showContent && (
+
                             <Nav>
+
                                 <Button
                                     className="c2 nav-link"
                                     variant="outline-dark"
@@ -56,7 +60,7 @@ function BasicExample() {
                                     Sign In
                                 </Button>
                             </Nav>
-                        )}
+
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

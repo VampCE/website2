@@ -6,13 +6,14 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {Search, Person, Home} from "@mui/icons-material";
 import { faUserSecret } from '@fortawesome/free-solid-svg-icons';
 import Navbar from "react-bootstrap/Navbar";
+import {Link} from "react-router-dom";
 export default function HomeNav() {
     return (
         <div className="topbarContainer">
             <div className="topbarLeft">
                 <Navbar.Brand className="candal-regular" href="/" style={{ color: "#6d5b53" }}>
                     LocateLost&nbsp;&nbsp;
-                    <FontAwesomeIcon icon={faUserSecret} style={{ color: "#6d5b53" }} />
+                    <FontAwesomeIcon icon={faUserSecret} style={{ color:"#6d5b53"  }} />
                 </Navbar.Brand>
             </div>
             <div className="topbarCenter">
@@ -27,10 +28,10 @@ export default function HomeNav() {
             <div className="topbarRight">
                 <div className="topbarLinks">
                     <div className="topbarLink">
-                        <Home sx={{ fontSize: 27}} />
-                        <span className="topbarText" >Homepage</span>
-                        <Person sx={{fontSize: 27}}/>
-                        <span className="topbarText">Profile</span>
+                        <Home sx={{ fontSize: 27,color:"#6d5b53" }} />
+                        <Link className="topbarText" to="/LocateLost" >Homepage</Link>
+                        <Person sx={{fontSize: 27, color:"#6d5b53" }}/>
+                        <Link className="topbarText" to="/Profile">Profile</Link>
                     </div>
 
                 </div>

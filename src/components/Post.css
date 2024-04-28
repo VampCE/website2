@@ -3,16 +3,18 @@
     flex-direction: column;
     margin-top:18px;
     margin-left: 18px;
-
+    background-color: rgba(143, 112, 93, 0.12);
     border: 1px solid #ccc;
     border-radius: 9px;
-    background-color: #1f2023;
+
     width:300px;
     height: 400px;
 }
 .postTop {
+
+    position: relative;
     width:300px;
-    height: 200px;
+    height: 220px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,27 +28,31 @@
 
 }
 .post-wrapper{
+
     display: flex;
     flex-direction: column;
 
 }
 .post-title{
-    color: white;
+     color:#6d5b53 ;
+    font-weight: bold;
     font-size: 20px;
     font-family: "Poppins", sans-serif;
     margin-left: 10px;
     margin-top: 9px;
 }
 .post-icon{
+    color:#6d5b53 ;
     margin-left: 3px;
     margin-right: 6px;
     margin-bottom: 6px;
-    color: white;
+
     font-size: 16px;
     cursor: pointer;
 }
 .post-location{
-    color: white;
+    color:#6d5b53 ;
+
     font-size: 16px;
     font-family: "Poppins", sans-serif;
 
@@ -60,7 +66,7 @@
 .post-date{
 
     margin-top:9px;
-    color: white;
+    color:#6d5b53 ;
     font-size: 16px;
     font-family: "Poppins", sans-serif;
 }
@@ -83,6 +89,34 @@
     border-radius: 5px;
     margin-right: 4px;
 
-    margin-bottom: 4px;
+
     cursor: pointer;
+}
+.box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent; /* Transparent background */
+    padding: 4px 12px;
+    border-radius: 5px;
+}
+
+.status-text {
+    padding: 2px 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.image-container {
+    width: 100%;
+    height: 220px;
+    position: relative;
+}
+
+.profile-img {
+    position: absolute;
+    top: 5px; /* Adjust as needed */
+    left: 5px; /* Adjust as needed */
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
 }

@@ -1,13 +1,14 @@
 .topbarContainer {
     height: 75px;
     width: 100%;
-    background-color: rgba(143, 112, 93, 0.48);
+    background-color: rgba(143, 112, 93, 0.5);
     display: flex;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 999;
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 
@@ -38,6 +39,7 @@
 }
 
 .searchIcon {
+
     font-size: 20px !important;
     margin-left: 10px;
 }
@@ -65,6 +67,7 @@
     cursor: pointer;
 }
 .topbarText {
+    color:#6d5b53 ;
     margin-right: 15px;
     font-size: 18px;
     font-family: "Poppins", sans-serif;
@@ -77,6 +80,7 @@
 }
 
 .topbarIconItem {
+
     height: 40px;
 
     cursor: pointer;

@@ -1,0 +1,61 @@
+.how-to-use-container {
+    width: 1100px;
+    margin-top:30px;
+    font-family: "Poppins", sans-serif;
+}
+
+.how-to-use-tabs {
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab {
+    cursor: pointer;
+    font-size:18px;
+
+    padding: 15px;
+    border: 1.5px solid  #775a4c;
+    color: #775a4c;
+}
+
+.tab.active {
+    background-color: #f0f0f0;
+}
+
+.tab-content {
+    margin-top: 10px;
+}
+
+
+.step h3:first-child:before {
+    content: "1. ";
+}
+
+.step h3:nth-child(2):before {
+    content: "2. ";
+}
+
+.step h3:nth-child(3):before {
+    content: "3. ";
+}
+
+.step h3:nth-child(4):before {
+    content: "4. ";
+}
+
+.step h3:nth-child(5):before {
+    content: "5. ";
+}
+
+.step h3:nth-child(6):before {
+    content: "6. ";
+}
+
+.step p {
+    color: #666;
+}
+.how-to-use-content{
+    font-size:18px;
+}
