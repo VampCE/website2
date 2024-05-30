@@ -13,7 +13,7 @@ function FormPage(){
                 <ArrowBackIosIcon /> Back to homepage
             </p>
             <div className={"form"}>
-                <FoundItemForm/>
+                <LostItemForm/>
 
             </div>
 

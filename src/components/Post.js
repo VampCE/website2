@@ -2,8 +2,9 @@ import React from "react";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import './Post.css';
+import {Link} from "react-router-dom";
 
-const Post = ({ status, image, profileImage, userProfileUrl }) => {
+const Post = ({ status,name, image, profileImage, userProfileUrl }) => {
     let statusText = "";
     let borderColor = "";
     let textColor = "";
@@ -35,21 +36,21 @@ const Post = ({ status, image, profileImage, userProfileUrl }) => {
         <div className="post">
             <div className="post-wrapper">
                 <div className="postTop">
-                    <div className="image-container"> {/* Add this div */}
+                    <div className="image-container" onClick={() => window.location.href = "/userInfo"}>
                         <a href={userProfileUrl}>
                             {profileImage ? (
-                                <img className="profile-img" src={profileImage} alt="Profile Image" />
+                                <img className="profile-img" src={profileImage} alt="Profile Image"/>
                             ) : (
-                                <img className="profile-img" src={"/images/profile.png"} alt="Default Profile Image" />
+                                <img className="profile-img" src={"/images/profile.png"} alt="Default Profile Image"/>
                             )}
                         </a>
                         {image ? (
                             <img className="post-img" src={image} alt="Post Image"/>
                         ) : (
-                            <img className="post-img" src={"/images/default.jpeg"  }  alt="Default Profile Image" />
-                            )}
-
+                            <img className="post-img" src={"/images/default.jpeg"} alt="Default Profile Image"/>
+                        )}
                     </div>
+
                     {/* Use the image prop here */}
                     <div className="box">
                         <span className="status-text" style={{
@@ -64,7 +65,7 @@ const Post = ({ status, image, profileImage, userProfileUrl }) => {
                 </div>
 
                 <div className="post-bottom">
-                    <h1 className="post-title"> UMBRELLA</h1>
+                    <h1 className="post-title"> {name}</h1>
                     <LocationOnIcon className="post-icon"/>
                     <span className="post-location">A Block</span>
                     <div>
@@ -73,7 +74,7 @@ const Post = ({ status, image, profileImage, userProfileUrl }) => {
                     </div>
 
                     <div className="post-bottom-right">
-                        <button className="details-button ">Details</button>
+                        <Link to="/details" className="details-button ">Details</Link>
                     </div>
                 </div>
             </div>

@@ -4,6 +4,8 @@ import {FaUser, FaLock} from "react-icons/fa"
 import {Dropdown} from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
 
+
+
 function LoginForm(){
     const navigate = useNavigate();
     const [selectedItem, setSelectedItem] = useState(null);
@@ -40,7 +42,7 @@ function LoginForm(){
 
 
                         <div className="input-box">
-                            <input type="t" placeholder='Username' required/>
+                            <input type="tex" placeholder='Username' required/>
                             <FaUser className='icon'/>
 
                         </div>

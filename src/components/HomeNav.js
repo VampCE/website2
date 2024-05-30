@@ -11,7 +11,7 @@ export default function HomeNav() {
     return (
         <div className="topbarContainer">
             <div className="topbarLeft">
-                <Navbar.Brand className="candal-regular" href="/" style={{ color: "#6d5b53" }}>
+                <Navbar.Brand className="candal-regular"  style={{ color: "#6d5b53" }}>
                     LocateLost&nbsp;&nbsp;
                     <FontAwesomeIcon icon={faUserSecret} style={{ color:"#6d5b53"  }} />
                 </Navbar.Brand>

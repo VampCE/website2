@@ -10,46 +10,58 @@ function Feed({ situation }) {
         {
             id: 1,
             status: "LOST",
-            image: "/images/1.jpeg",
+            image: "/images/icard.jpeg",
+            name: "Istanbul Card",
             profileImage: "/images/profile.png"
         },
         {
             id: 2,
             status: "FOUND",
+            name: "Keys",
             image: "/images/default.jpeg"
         },
         {
             id: 3,
+            name: "Red scarf",
             status: "DELIVERED",
-            profileImage: "/images/1.jpeg"
+            profileImage: "/images/asya.jpg"
         },
         {
             id: 4,
+            name: "School Card",
+            image: "/images/scard.jpeg",
             status: "LOST"
         },
         {
             id: 5,
             status: "FOUND",
-            image: "/images/1.jpeg"
+            name: "Lost Airpods",
+            image: "/images/headphone.jpeg",
+            profileImage: "/images/asya.jpg",
         },
         {
             id: 6,
+            name: "School Card",
             status: "DELIVERED",
-            image: "/images/1.jpeg"
+            image: "/images/scard.jpeg",
         },
         {
             id: 7,
             status: "LOST",
-            image: "/images/1.jpeg"
+            name: "Lost Airpods",
+            image: "/images/headphone.jpeg",
         },
         {
             id: 8,
             status: "FOUND",
-            image: "/images/1.jpeg"
+            name: "Istanbul Card",
+            image: "/images/icard.jpeg",
         },
         {
             id: 9,
-            status: "DELIVERED"
+            status: "DELIVERED",
+            name: "Umbrella",
+            profileImage: "/images/asya.jpg"
         }
     ];
 

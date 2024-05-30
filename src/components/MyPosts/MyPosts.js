@@ -27,7 +27,7 @@ const MyPosts = () => {
                         <td>{post.title}</td>
                         <td>{post.status}</td>
                         <td>
-                            <button >Details</button>
+                            <button  href="/details" >Details</button>
                         </td>
                     </tr>
                 ))}
